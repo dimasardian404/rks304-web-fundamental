@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>belajartailwind.com - Dashboard</title>
+    <!-- Memanggil Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen flex flex-col bg-gray-50 text-gray-800 font-sans">
+    <!-- 2. Navigation Header Biru & 1. Logo Teks Putih -->
+    <header
+      class="bg-blue-600 text-white flex justify-between items-center px-6 py-4 shadow-md"
+    >
+      <div class="text-xl font-bold tracking-wide">belajartailwind.com</div>
+      <a
+        class="bg-blue-800 hover:bg-red-900 px-4 py-2 rounded-md font-semibold transition text-sm"
+        href="index.html"
+      >
+        Logout
+      </a>
+    </header>
+
+    <!-- Wrapper untuk Sidebar & Konten Utama -->
+    <div class="flex flex-1 overflow-hidden">
+      <!-- 3. Sidebar Kiri -->
+      <aside class="w-64 bg-white border-r shadow-lg flex flex-col p-4">
+        <nav class="flex flex-col gap-2">
+          <!-- Status Aktif (Diklik): Background Biru, Teks Putih -->
+          <a
+            href="dashboard.html"
+            class="px-4 py-3 rounded-lg text-black hover:bg-gray-100 font-medium transition"
+          >
+            Dashboard
+          </a>
+          <!-- Status Inaktif: Teks Hitam -->
+          <a
+            href="products.html"
+            class="px-4 py-3 rounded-lg bg-sky-400 text-white font-medium shadow transition"
+          >
+            Products
+          </a>
+          <a
+            href="#"
+            class="px-4 py-3 rounded-lg text-black hover:bg-gray-100 font-medium transition"
+          >
+            Users
+          </a>
+          <a
+            href="#"
+            class="px-4 py-3 rounded-lg text-black hover:bg-gray-100 font-medium transition"
+          >
+            Settings
+          </a>
+        </nav>
+      </aside>
+
+      <!-- 4. Area Konten Utama -->
+      <main class="flex-1 p-8 overflow-y-auto">
+        <h1 class="text-3xl font-bold mb-4 text-gray-900">Edit Produk</h1>
+
+        <!-- 2. Isi konten untuk file edit-produk.html -->
+        <div
+          class="max-w-md bg-white p-6 rounded-lg shadow-sm border border-gray-100"
+        >
+          <form class="flex flex-col gap-4">
+            <!-- Input Name -->
+            <div>
+              <label
+                for="name"
+                class="block text-sm font-medium text-gray-700 mb-1"
+                >Name</label
+              >
+              <!-- Atribut value ditambahkan di sini -->
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value="Beng-Beng"
+                class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
+              />
+            </div>
+
+            <!-- Input Stock -->
+            <div>
+              <label
+                for="stock"
+                class="block text-sm font-medium text-gray-700 mb-1"
+                >Stock</label
+              >
+              <!-- Atribut value ditambahkan di sini -->
+              <input
+                type="number"
+                id="stock"
+                name="stock"
+                value="25"
+                class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
+              />
+            </div>
+
+            <!-- Input Description -->
+            <div>
+              <label
+                for="description"
+                class="block text-sm font-medium text-gray-700 mb-1"
+                >Description</label
+              >
+              <!-- Khusus textarea, nilai diletakkan di antara tag pembuka dan penutup, BUKAN menggunakan atribut value="" -->
+              <textarea
+                id="description"
+                name="description"
+                rows="3"
+                class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
+              >
+Chocolate Wafer</textarea
+              >
+            </div>
+
+            <!-- Tombol Submit -->
+            <button
+              type="submit"
+              class="mt-2 bg-blue-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-700 transition"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </main>
+    </div>
+
+    <!-- 6. Footer -->
+    <footer class="bg-gray-800 text-white text-center py-2 text-sm">
+      &copy; 2026 belajartailwind.com. Hak cipta dilindungi undang-undang.
+    </footer>
+  </body>
+</html>

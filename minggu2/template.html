@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>belajartailwind.com - Dashboard</title>
+    <!-- Memanggil Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen flex flex-col bg-gray-50 text-gray-800 font-sans">
+    <!-- 2. Navigation Header Biru & 1. Logo Teks Putih -->
+    <header
+      class="bg-blue-600 text-white flex justify-between items-center px-6 py-4 shadow-md"
+    >
+      <div class="text-xl font-bold tracking-wide">belajartailwind.com</div>
+      <a
+        class="bg-blue-800 hover:bg-red-900 px-4 py-2 rounded-md font-semibold transition text-sm"
+        href="index.html"
+      >
+        Logout
+      </a>
+    </header>
+
+    <!-- Wrapper untuk Sidebar & Konten Utama -->
+    <div class="flex flex-1 overflow-hidden">
+      <!-- 3. Sidebar Kiri -->
+      <aside class="w-64 bg-white border-r shadow-lg flex flex-col p-4">
+        <nav class="flex flex-col gap-2">
+          <!-- Status Aktif (Diklik): Background Biru, Teks Putih -->
+          <a
+            href="#"
+            class="px-4 py-3 rounded-lg bg-sky-400 text-white font-medium shadow transition"
+          >
+            Dashboard
+          </a>
+          <!-- Status Inaktif: Teks Hitam -->
+          <a
+            href="products.html"
+            class="px-4 py-3 rounded-lg text-black hover:bg-gray-100 font-medium transition"
+          >
+            Products
+          </a>
+          <a
+            href="#"
+            class="px-4 py-3 rounded-lg text-black hover:bg-gray-100 font-medium transition"
+          >
+            Users
+          </a>
+          <a
+            href="#"
+            class="px-4 py-3 rounded-lg text-black hover:bg-gray-100 font-medium transition"
+          >
+            Settings
+          </a>
+        </nav>
+      </aside>
+
+      <!-- 4. Area Konten Utama -->
+      <main class="flex-1 p-8 overflow-y-auto">
+        <main class="flex-1 p-8 overflow-y-auto">
+          <h1 class="text-3xl font-bold mb-4 text-gray-900">
+            Judul Halaman Template
+          </h1>
+          <p class="text-gray-600">
+            Ini adalah paragraf sampel untuk starter template. Nantinya area ini
+            akan diganti dengan konten sebenarnya seperti tabel atau form.
+          </p>
+        </main>
+      </main>
+    </div>
+
+    <!-- 6. Footer -->
+    <footer class="bg-gray-800 text-white text-center py-2 text-sm">
+      &copy; 2026 belajartailwind.com. Hak cipta dilindungi undang-undang.
+    </footer>
+  </body>
+</html>
